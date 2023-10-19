@@ -1,0 +1,42 @@
+masthead:
+  title: Welcome to our studio!
+  subtitle: It's Nice to Meet You
+  button: Tell Me More
+  buttonlink: "#about"
+
+about:
+  title: ""
+  subtitle: ""
+  body: "A double degree graduate with Bachelors of Science in both **Agriculture** and **Computer Science.** I am a hard-working and driven learner to blah blah blah."
+  section: about
+
+projects:
+  title: "Projects"
+  subtitle: "These are some projects I have made."
+  section: project-porfolio
+
+work-experience:
+  title: "Work Experience"
+  subtitle: "Some blerb about work experience"
+  section: work-experience
+
+education:
+  title: "Education"
+  subtitle: ""
+  section: education
+
+#add certifications section?
+
+contact:
+  title: "Let's Keep in Touch!"
+  email: my_email@example.com
+  socials:
+    - title: LinkedIn
+      link: https://www.linkedin.com
+      icon: https://img.icons8.com/ios/50/linkedin.png
+      alt: linkedin
+    - title: GitHub
+      link: https://github.com
+      icon: https://img.icons8.com/sf-black/64/github.png
+      alt: github
+    # add more socials here

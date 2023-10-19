@@ -1,0 +1,15 @@
+<!-- contact -->
+<section id="{{ site.data.sitedata.contact.section | default "contact" }}">
+    <div>
+        <a href="mailto:{{site.data.sitetext.contact.email}}">{{ site.data.sitetext.contact.email }}</a>
+    </div>
+    <div>
+        {% for social in site.data.sitetext.contact.socials %}
+            {% if social.link != "" && social.icon != "" %}
+                <a href="{{ social.link }}">
+                    <img width="64" height="64" src="{{ social.icon }}" alt="{{ social.alt }}">
+                </a>
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>

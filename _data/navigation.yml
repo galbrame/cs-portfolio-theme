@@ -1,0 +1,12 @@
+- title: "About"
+  section: about
+- title: "Projects"
+  section: project-portfolio
+- title: "Work Experience"
+  section: work-experience
+- title: "Education"
+  section: education
+- title: "Contact"
+  section: contact
+- title: "Theme Source"
+  url: https://github.com/galbrame/cs-portfolio-theme

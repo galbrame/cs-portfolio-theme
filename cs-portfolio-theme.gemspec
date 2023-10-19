@@ -4,7 +4,6 @@ Gem::Specification.new do |spec|
   spec.name          = "cs-portfolio-theme"
   spec.version       = "0.1.0"
   spec.authors       = ["Megan Galbraith (galbrame)"]
-  spec.email         = ["meg_galbraith@hotmail.com"]
 
   spec.summary       = "A simple portfolio theme aimed at computer science peoples."
   spec.homepage      = "https://github.com/galbrame/cs-portfolio-theme"

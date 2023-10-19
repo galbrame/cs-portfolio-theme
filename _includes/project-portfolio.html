@@ -1,0 +1,22 @@
+<!-- portfolio -->
+<!-- generate all of the projects, but if >max_visible, then hidden=true -->
+<section id="{{ site.data.sitedata.projects.section | default "project-portfolio" }}">
+    <h2>{{ site.data.sitetext.projects.title }}</h2>
+    <span>{{ site.data.sitetext.projects.subtitle }}</span>
+
+    <!-- not sure if want a second sort? Year kinda vague... -->
+    <!-- not sure if 'reverse' should go in first or second line -->
+    <!-- assign grouped = site.projects | group_by: 'year' | reverse -->
+    <!-- assign sorted = grouped | sort: 'title' -->
+    
+    {% assign sorted = site.projects | sort: 'year' | reverse %}
+    {% for project in sorted %}
+        <div>
+            <img src="{{ project.img-path }}">
+            <h3>{{ project.title }}, {{ project.year }}</h3>
+            <!-- caption for the main page -->
+            <div>{{ project.caption }}</div>
+            <!-- will show full description (content) and project link in pop out -->
+        </div>
+    {% endfor %}
+</section>

@@ -1,0 +1,31 @@
+<!-- navigation -->
+<nav id="navMain">
+
+    <!-- show either site logo or title (_config.yml) -->
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        {% if site.logo %}
+            <img height="{{ site.logo.height | default: 52 }}" src="{{ site.logo.path }}"/>
+        {% else %}
+            {{ site.title }}
+        {% endif %}
+    </a>
+
+    <!-- nav links -->
+    <ul>
+        {% for link in site.data.navigation %}
+            <li>
+                {% if link.url %}
+                    <a href="{{ link.url }}">{{ link.title }}</a>
+                {% elsif link.section %}
+                    <a href="#{{ link.section }}">{{ link.title }}</a>
+                {% else %}
+                    <!-- safe coding practice -->
+                    <a href="#">{{ link.title }}</a>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+
+    <!-- INCLUDE MASTHEAD HERE -->
+
+</nav>

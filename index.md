@@ -1,8 +1,4 @@
 ---
 title: Home
-layout: default
+layout: home
 ---
-
-# Welcome
-
-This is the homepage for now.

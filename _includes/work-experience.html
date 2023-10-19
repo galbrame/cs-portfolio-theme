@@ -1,0 +1,11 @@
+<!-- Work experience -->
+<section id="{{ site.data.sitedata.work-experience.section | default "work-experience" }}">
+    <h2>{{ site.data.sitetext.work-experience.title }}</h2>
+    <span>{{ site.data.sitetext.work-experience.subtitle }}</span>
+
+    {% for job in site.jobs %}
+        <h3>{{ job.position }}, {{ job.startdate }} - {{ job.enddate }}</h3>
+        <p>{{ job.company }}, {{ job.location }}</p>
+        <div>{{ job.content | markdownify }}</div>
+    {% endfor %}
+</section>

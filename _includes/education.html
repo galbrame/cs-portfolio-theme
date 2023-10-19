@@ -1,0 +1,11 @@
+<!-- education -->
+<section id="{{ site.data.sitedata.education.section | default "education" }}">
+    <h2>{{ site.data.sitetext.education.title }}</h2>
+
+    {% assign sorted = site.education | sort: 'grad-yr' | reverse %}
+    {% for edu in sorted  %}
+        <h3>{{ edu.degree }} ({{ edu.major }}), {{ edu.grad-yr }}</h3>
+        <span>{{ edu.institution }}</span>
+        <span>{{ edu.content | markdownify }}</span>
+    {% endfor %}
+</section>
